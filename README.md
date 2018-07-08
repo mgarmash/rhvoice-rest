@@ -13,21 +13,21 @@
 
 Проверить можно вот так (должно вернуть mp3-поток)
 
-`http://localhost:8080/say?text=123`
+http://localhost:8080/say?text=123
 
 Принимаются только два параметра: 
 `text` - URL-encoded строка  
-`voice` - имя голоса для RHVoice (полный список тут `https://github.com/Olga-Yakovleva/RHVoice/wiki/Latest-version-%28Russian%29`)
+`voice` - имя голоса для RHVoice (полный список тут https://github.com/Olga-Yakovleva/RHVoice/wiki/Latest-version-%28Russian%29)
 
 Docker-образ получился массивный, принимаются PR для уменьшения. C Alpine не взлетает сборка RHVoice.
 Поддерживаются все языки RHVoice выбором соответствующего голоса.
 Конфигурация по-умолчанию, можно смонтировать `/usr/local/etc/RHVoice/` и подложить свой конфиг.
-Детали интеграции и кастомный компонент для HA: `https://github.com/mgarmash/ha-rhvoice-tts`
+Детали интеграции и кастомный компонент для HA: https://github.com/mgarmash/ha-rhvoice-tts
 
-#TODO
+# TODO
  - Написать нормальную доку
  - Сделать PR в home-assistant.io
  
-#Links
+# Links
  - https://github.com/Olga-Yakovleva/RHVoice
  - https://github.com/vantu5z/RHVoice-dictionary
